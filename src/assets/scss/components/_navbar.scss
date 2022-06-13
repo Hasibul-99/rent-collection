@@ -1,0 +1,11 @@
+.sidebar-body {
+    .active {
+        svg {
+            fill: rgba(239,243,255,.5);
+            color: #6571ff;
+        }
+        path {
+            stroke: #6571ff;
+        }
+    }
+}
