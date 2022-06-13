@@ -13,12 +13,26 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { IconsProviderModule } from './icons-provider.module';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
+import { AuthLayoutComponent } from './layout/auth-layout/auth-layout.component';
+import { PrivateLayoutComponent } from './layout/private-layout/private-layout.component';
+import { LoginComponent } from './pages/auths/login/login.component';
+import { RegistrationComponent } from './pages/auths/registration/registration.component';
+import { DashboardComponent } from './pages/private/dashboard/dashboard.component';
+import { LandlordsComponent } from './pages/private/landlords/landlords.component';
+import { PropertiesComponent } from './pages/private/properties/properties.component';
 
 registerLocaleData(en);
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AuthLayoutComponent,
+    PrivateLayoutComponent,
+    LoginComponent,
+    RegistrationComponent,
+    DashboardComponent,
+    LandlordsComponent,
+    PropertiesComponent
   ],
   imports: [
     BrowserModule,
