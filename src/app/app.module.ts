@@ -20,6 +20,9 @@ import { RegistrationComponent } from './pages/auths/registration/registration.c
 import { DashboardComponent } from './pages/private/dashboard/dashboard.component';
 import { LandlordsComponent } from './pages/private/landlords/landlords.component';
 import { PropertiesComponent } from './pages/private/properties/properties.component';
+import { LeftSidebarComponent } from './compoment/left-sidebar/left-sidebar.component';
+import { NavbarComponent } from './compoment/navbar/navbar.component';
+import { FooterComponent } from './compoment/footer/footer.component';
 
 registerLocaleData(en);
 
@@ -32,7 +35,10 @@ registerLocaleData(en);
     RegistrationComponent,
     DashboardComponent,
     LandlordsComponent,
-    PropertiesComponent
+    PropertiesComponent,
+    LeftSidebarComponent,
+    NavbarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

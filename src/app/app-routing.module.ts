@@ -4,6 +4,9 @@ import { AuthLayoutComponent } from './layout/auth-layout/auth-layout.component'
 import { PrivateLayoutComponent } from './layout/private-layout/private-layout.component';
 import { LoginComponent } from './pages/auths/login/login.component';
 import { RegistrationComponent } from './pages/auths/registration/registration.component';
+import { DashboardComponent } from './pages/private/dashboard/dashboard.component';
+import { LandlordsComponent } from './pages/private/landlords/landlords.component';
+import { PropertiesComponent } from './pages/private/properties/properties.component';
 
 const routes: Routes = [
   // { path: '', pathMatch: 'full', redirectTo: '/welcome' },
@@ -25,7 +28,20 @@ const routes: Routes = [
   {
     path: '',
     component: PrivateLayoutComponent,
-    
+    children: [
+      {
+        path: '',
+        component: DashboardComponent
+      },
+      {
+        path: 'landlords',
+        component: LandlordsComponent
+      },
+      {
+        path: 'properties',
+        component: PropertiesComponent
+      }
+    ]
   }
 ];
 
